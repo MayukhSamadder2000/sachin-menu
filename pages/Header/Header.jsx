@@ -6,8 +6,12 @@ import Navres from "../Navres/Navres";
 export default function Header() {
   return (
     <div className='header'>
-      {/* <Navbar /> */}
-      <Navres />
+      <div className='bigNav'>
+        <Navbar />
+      </div>
+      <div className='smallNav'>
+        <Navres />
+      </div>
     </div>
   );
 }

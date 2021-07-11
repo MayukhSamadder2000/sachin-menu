@@ -47,8 +47,15 @@ export default function Navres() {
     <>
       <nav className='navres'>
         <div className='logo'>Stripe</div>
-        <div className='menu' onClick={openMenu}>
-          x
+        <div
+          className='menu'
+          onClick={openMenu}
+          style={{
+            fontSize: "2rem",
+            cursor: "pointer",
+          }}
+        >
+          =
         </div>
       </nav>
       <div className='navres__cover'>

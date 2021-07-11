@@ -223,3 +223,19 @@ a {
   cursor: pointer;
   z-index: 10000;
 }
+
+.bigNav {
+  display: block;
+}
+.smallNav {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .bigNav {
+    display: none;
+  }
+  .smallNav {
+    display: block;
+  }
+}
