@@ -136,6 +136,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 2em;
+
   align-items: center;
 }
 .navres__cover {
@@ -145,9 +146,80 @@ a {
   width: 95%;
   top: 1em;
   left: 50%;
-  padding: 2em 1em;
+  padding: 1em 1em;
   transform: translate(-50%, 0);
   background-color: #eee;
   border-radius: 1rem;
   box-shadow: 0 10px 30px -10px rgba(1, 1, 1, 0.16);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.navopen {
+  opacity: 1;
+  pointer-events: all;
+}
+.smallicontext {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.smallicontext .img {
+  width: 1.3em;
+  margin-right: 1em;
+  height: auto;
+}
+.section-products {
+  height: 43%;
+  position: relative;
+  padding: 1em 0;
+}
+.section-products .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.section-devs {
+  height: 20%;
+  position: relative;
+  padding: 1em 0;
+}
+.section-devs .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.section-company {
+  height: 18%;
+  position: relative;
+  padding: 1em 0;
+}
+.section-company .items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.prc {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 1em;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+.srt {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 1em;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.navcross {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  z-index: 10000;
 }
